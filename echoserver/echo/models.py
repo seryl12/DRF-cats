@@ -3,6 +3,6 @@ from django.db import models
 
 # Create your models here.
 class Cat(models.Model):
-    name = models.CharField(max_length=16)
+    name = models.CharField(max_length=16, unique=True)
     color = models.CharField(max_length=16)
     year_of_birth = models.PositiveIntegerField(null=True)
